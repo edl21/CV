@@ -29,7 +29,7 @@ jobs:
         run: docker run --rm -v "${PWD}/:/data" blang/latex:ctanfull pdflatex CV.tex
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cv-pdf
           path: CV.pdf
