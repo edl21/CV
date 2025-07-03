@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font. comment this line out if you want to use the default LaTeX font Computer Modern
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge {{ data['name'] }}}
+
+\vspace{5pt}
+
+
+% contact information
+\centerline{\href{{ "{" + data['contact_info']['email'] + "}" }}{{ "{" + data['contact_info']['email'] + "}" }} | \href{{ "{" + data['contact_info']['portfolio'] + "}" }}{{ "{" + data['contact_info']['portfolio'] + "}" }} | \href{{ "{" + data['contact_info']['github'] + "}" }}{{ "{" + data['contact_info']['github'] + "}" }}}
+
+\vspace{-10pt}
+
+
+
+% skills section
+\section*{Skills}
+{% for skill, items in data['skills'].items() %}
+\textbf{{ "{" + skill + ":}" }} {{ items | join(', ') }} \\
+{% endfor %}
+
+
+\vspace{-6.5pt}
+
+
+% experience section
+\section*{Experience}
+{% for exp in data['exp'] %}
+\textbf{{ "{" + exp['title'] + ",}" }} {{ "{" + exp['company'] + ",}" }} -- {{ exp['time'] }} \hfill {{ exp['date']}} \\
+\vspace{-9pt}
+\begin{itemize}
+    {% for point in exp['points'] %}
+        \item {{ point }}
+    {% endfor %}
+\end{itemize}
+{% endfor %}
+
+\vspace{-18.5pt}
+
+% projects section
+\section*{Projects}
+{% for proj in data['proj'] %}
+\textbf{{ "{" + proj['title'] + "}" }} \hfill \href{{ "{" + proj['link'] + "}" }}{{ "{" + proj['link_name'] + "}" }} \\
+\vspace{-9pt}
+\begin{itemize}
+    {% for point in proj['points'] %}
+        \item {{ point }}
+    {% endfor %}\end{itemize}
+{% endfor %}
+
+\vspace{-18.5pt}
+
+% education section
+\section*{Education}
+{% for edu in data['edu'] %}
+\textbf{{ "{" + edu['institution'] + "}" }} -- {{ edu['degree'] }} \hfill {{ edu['date'] }} \\
+{% endfor %}
+
+
+
+
+\end{document}

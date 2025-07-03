@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font. comment this line out if you want to use the default LaTeX font Computer Modern
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge James Dunwoodie-Rowley}
+
+\vspace{5pt}
+
+
+% contact information
+\centerline{\href{Jamiedunwoodie2002@gmail.com}{Jamiedunwoodie2002@gmail.com} | \href{Jaorow.com}{Jaorow.com} | \href{https://github.com/Jaorow}{https://github.com/Jaorow}}
+
+\vspace{-10pt}
+
+
+
+% skills section
+\section*{Skills}
+
+\textbf{Languages:} Python, C++, C\#, Java, Bash, SQLite, TypeScript, JavaScript, MD, HTML, CSS \\
+
+\textbf{AI/ML:} Pandas, TensorFlow, Vector Databases, Azure AI Foundry, LangChain, HuggingFace, LlamaIndex \\
+
+\textbf{Dev Technologies:} FastAPI, React, DotNet, Docker, Jinja2, Swagger, Linux, Git, GitHub, GitHub Actions, CI/CD \\
+
+\textbf{Other:} Jira, Confluence, Agile, Scrum, Kanban, Problem Solving, Teamwork, Communication \\
+
+
+
+\vspace{-6.5pt}
+
+
+% experience section
+\section*{Experience}
+
+\textbf{AI Developer,} {Fonterra,} -- 1 yrs 8 mos \hfill Dec 2023 - Present \\
+\vspace{-9pt}
+\begin{itemize}
+    
+        \item Developed AI models for predictive maintenance
+    
+        \item Collaborated with cross-functional teams to integrate AI solutions
+    
+\end{itemize}
+
+\textbf{AI Developer,} {Fonterra,} -- 9 mos -- Part-time \hfill Apr 2023 - Dec 2023 \\
+\vspace{-9pt}
+\begin{itemize}
+    
+        \item Assisted in the design and analysis of mechanical systems
+    
+        \item Conducted simulations using CAD software
+    
+\end{itemize}
+
+\textbf{Data Intern,} {Fonterra,} -- 4 mos \hfill Dec 2022 - Mar 2023 \\
+\vspace{-9pt}
+\begin{itemize}
+    
+        \item Assisted in the design and analysis of mechanical systems
+    
+        \item Conducted simulations using CAD software
+    
+\end{itemize}
+
+
+\vspace{-18.5pt}
+
+% projects section
+\section*{Projects}
+
+\textbf{STL upload Portal} \hfill \href{https://STL uploads}{https://STL uploads} \\
+\vspace{-9pt}
+\begin{itemize}
+    
+        \item Performed thermal simulations to optimize HVAC system performance
+    
+        \item Reduced energy consumption by 15%
+    \end{itemize}
+
+
+\vspace{-18.5pt}
+
+% education section
+\section*{Education}
+
+\textbf{University of Auckland} -- Bachelor of Computer Science \hfill 2021 - 2024 \\
+
+
+
+
+
+\end{document}

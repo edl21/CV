@@ -1,0 +1,64 @@
+{
+    "name": "James Dunwoodie-Rowley",
+    "contact_info": {
+        "email": "Jamiedunwoodie2002@gmail.com",
+        "portfolio": "Jaorow.com",
+        "github": "https://github.com/Jaorow"
+    },
+    "skills": {
+        "Languages": ["Python", "C++", "C\\#", "Java", "Bash", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS"],
+        "AI/ML": ["Pandas", "TensorFlow", "Vector Databases", "Azure AI Foundry", "LangChain", "HuggingFace", "LlamaIndex"],
+        "Dev Technologies": ["FastAPI", "React", "DotNet", "Docker", "Jinja2", "Swagger", "Linux", "Git", "GitHub", "GitHub Actions","CI/CD"],
+        "Other" : ["Jira", "Confluence", "Agile", "Scrum", "Kanban", "Problem Solving", "Teamwork", "Communication"]
+    },
+    "exp": [
+        {
+            "title": "AI Developer",
+            "company": "Fonterra",
+            "time": "1 yrs 8 mos",
+            "date": "Dec 2023 - Present",
+            "points": [
+                "Developed AI models for predictive maintenance",
+                "Collaborated with cross-functional teams to integrate AI solutions"
+            ]
+        },
+        {
+            "title": "AI Developer",
+            "company": "Fonterra",
+            "time": "9 mos -- Part-time",
+            "date": "Apr 2023 - Dec 2023",
+            "points": [
+                "Assisted in the design and analysis of mechanical systems",
+                "Conducted simulations using CAD software"
+            ]
+        },
+        {
+            "title": "Data Intern",
+            "company": "Fonterra",
+            "time": "4 mos",
+            "date": "Dec 2022 - Mar 2023",
+            "points": [
+                "Assisted in the design and analysis of mechanical systems",
+                "Conducted simulations using CAD software"
+            ]
+        }
+    ],
+    "proj": [
+        {
+            "title": "STL upload Portal",
+            "link": "https://STL uploads",
+            "link_name": "https://STL uploads",
+            "points": [
+                "Performed thermal simulations to optimize HVAC system performance",
+                "Reduced energy consumption by 15%"
+            ]
+        }
+    ],
+    "edu": [
+        {
+            "degree": "Bachelor of Computer Science",
+            "institution": "University of Auckland",
+            "date": "2021 - 2024"
+        }
+    ]
+}
