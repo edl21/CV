@@ -40,17 +40,6 @@ right=0.5in]{geometry}              % specify right page margin
 \vspace{-10pt}
 
 
-
-% skills section
-\section*{Skills}
-{% for skill, items in data['skills'].items() %}
-\textbf{{ "{" + skill + ":}" }} {{ items | join(', ') }} \\
-{% endfor %}
-
-
-\vspace{-6.5pt}
-
-
 % experience section
 \section*{Experience}
 {% for exp in data['exp'] %}
@@ -77,6 +66,15 @@ right=0.5in]{geometry}              % specify right page margin
 {% endfor %}
 
 \vspace{-18.5pt}
+
+% skills section
+\section*{Skills}
+{% for skill, items in data['skills'].items() %}
+\textbf{{ "{" + skill + ":}" }} {{ items | join(', ') }} \\
+{% endfor %}
+
+
+\vspace{-6.5pt}
 
 % education section
 \section*{Education}
