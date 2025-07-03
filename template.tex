@@ -43,7 +43,7 @@ right=0.5in]{geometry}              % specify right page margin
 % experience section
 \section*{Experience}
 {% for exp in data['exp'] %}
-\textbf{{ "{" + exp['title'] + ",}" }} {{ "{" + exp['company'] + ",}" }} -- {{ exp['time'] }} \hfill {{ exp['date']}} \\
+\textbf{{ "{" + exp['title'] + ",}" }} {{ "{" + exp['company'] + "}" }} \hfill {{ exp['date']}} \\
 \vspace{-9pt}
 \begin{itemize}
     {% for point in exp['points'] %}

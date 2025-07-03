@@ -3,60 +3,73 @@
     "contact_info": {
         "email": "Jamiedunwoodie2002@gmail.com",
         "portfolio": "Jaorow.com",
-        "github": "https://github.com/Jaorow"
-    },
-    "skills": {
-        "Languages": ["Python", "C++", "C\\#", "Java", "Bash", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS"],
-        "AI/ML": ["Pandas", "TensorFlow", "Vector Databases", "Azure AI Foundry", "LangChain", "HuggingFace", "LlamaIndex"],
-        "Dev Technologies": ["FastAPI", "React", "DotNet", "Docker", "Jinja2", "Swagger", "Linux", "Git", "GitHub", "GitHub Actions","CI/CD"],
-        "Other" : ["Jira", "Confluence", "Agile", "Scrum", "Kanban", "Problem Solving", "Teamwork", "Communication"]
+        "github": "github.com/Jaorow"
     },
     "exp": [
         {
-            "title": "AI Developer",
+            "title": "AI Developer -- Full-time",
             "company": "Fonterra",
-            "time": "1 yrs 8 mos",
             "date": "Dec 2023 - Present",
             "points": [
-                "Developed AI models for predictive maintenance",
-                "Collaborated with cross-functional teams to integrate AI solutions"
+                "Developed an internal AI MultiAgent chatbot capable of combining custom agents for insightful responses for 3500+ monthly users, to replace external AI tools and reduce costs in a fast passed agile team",
+                "Transitioned an application from custom Langchain stack to Semantic Kernel, enabling more complex agent interactions and auto agent routing",
+                "Introduced real-time message streaming using Azure Web PubSub, significantly improving responsiveness and user engagement, hiding increased multi agent response times",
+                "Led development of new full-stack unit testing framework, enhancing code reliability and maintainability",
+                "Rebuilt the front-end interface to enhance usability, readability, and accessibility, based on iterative feedback from internal testing and real user behavior",
+                "Moved server-side session storage to Cosmos DB to remove cache limits and consolidate data",
+                "Delivered regular demos to leadership during sprint reviews, increasing cross-team visibility and contributing to broader adoption of transparent development practices",
+                "Single handedly designed and implemented cutting edge natural language to SQL engine using RAG pipelines for contextual understanding of table schemas and training data",
+                "Built a front-end interface for the SQL engine supporting chat history, prompt libraries and evaluation tools",
+                "Led and mentored interns to improve the performance and accuracy of the SQL generation engine"
             ]
         },
         {
-            "title": "AI Developer",
+            "title": "AI Developer -- Part-time",
             "company": "Fonterra",
-            "time": "9 mos -- Part-time",
             "date": "Apr 2023 - Dec 2023",
             "points": [
-                "Assisted in the design and analysis of mechanical systems",
-                "Conducted simulations using CAD software"
+                "Developed an internal tool for process safety teams, leveraging cutting-edge RAG techniques to surface insights",
+                "Worked closely with stakeholders to refine product requirements and rapidly iterate on feedback",
+                "Built custom ingestion pipelines to unify data from diverse sources into structured tables",
+                "Developed and optimised multimodal LLM-powered extraction and evaluation tools that preserved document layout and spatial structure, enabling precise, context-aware data interpretation"
             ]
         },
         {
             "title": "Data Intern",
             "company": "Fonterra",
-            "time": "4 mos",
             "date": "Dec 2022 - Mar 2023",
             "points": [
-                "Assisted in the design and analysis of mechanical systems",
-                "Conducted simulations using CAD software"
+                "Automated data curation and built a python application to extract and compare tables from a data platform"
             ]
         }
     ],
     "proj": [
         {
             "title": "STL upload Portal",
-            "link": "https://STL uploads",
-            "link_name": "https://STL uploads",
+            "link": "https://www.regal.co.nz",
+            "link_name": "regal.co.nz",
             "points": [
-                "Performed thermal simulations to optimize HVAC system performance",
-                "Reduced energy consumption by 15%"
+                "Built and deployed a full-stack web application for uploading and managing STL files for regal casting"
+            ]
+        },
+        {
+            "title": "Go Bear AI Job Search",
+            "link": "https://gobear.me",
+            "link_name": "gobear.me",
+            "points": [
+                "Led a team of three to develop a full-stack AI job search platform, integrating advanced LLM capabilities for personalized job matching and automatic CV/Cover letter customisation"
             ]
         }
     ],
+    "skills": {
+        "Languages": ["Python", "C++", "C\\#", "Java", "Bash", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS"],
+        "Dev Technologies": ["FastAPI", "React", "DotNet", "Docker", "Jinja2", "Swagger", "Linux", "Git", "GitHub", "GitHub Actions","CI/CD"],
+        "AI/ML": ["Pandas", "TensorFlow", "Vector Databases", "Azure AI Foundry", "LangChain", "LlamaIndex"],
+        "Other" : ["Jira", "Confluence", "Agile", "Scrum", "Kanban", "Problem Solving", "Teamwork", "Communication"]
+    },
     "edu": [
         {
-            "degree": "Bachelor of Computer Science",
+            "degree": "Bachelor of Science majoring in Computer Science",
             "institution": "University of Auckland",
             "date": "2021 - 2024"
         }

@@ -1,0 +1,42 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install jinja2 watchdog
+
+      - name: Run main.py to generate CV.tex
+        run: python main.py
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build PDF with Docker
+        run: docker run --rm -v "${PWD}/:/data" blang/latex:ctanfull pdflatex CV.tex
+
+
+      - name: Deploy PDF to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          keep_files: true
+          force_orphan: true
+          # Only publish the PDF
+          include: |
+            CV.pdf

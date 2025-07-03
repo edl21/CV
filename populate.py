@@ -8,9 +8,6 @@ from watchdog.events import FileSystemEventHandler
 
 from jinja2 import Environment, FileSystemLoader
 
-json_filepath = r"data.json"
-template_path = r"template.tex"
-output_path = r"CV.tex"
 
 class JsonChangeHandler(FileSystemEventHandler):
     def __init__(self, json_filepath, template_path, output_path):
@@ -22,7 +19,7 @@ class JsonChangeHandler(FileSystemEventHandler):
         if event.src_path.endswith(self.json_filepath):
             print(f"{self.json_filepath} changed, rebuilding...")
             try:
-                change(self.json_filepath, self.template_path, self.output_path)
+                build(self.json_filepath, self.template_path, self.output_path)
                 print("\n\nRebuild complete!\nWatching...\n\n")
 
             except Exception as e:
@@ -57,7 +54,7 @@ def build_pdf(output_path):
     else:
         os.system("rm CV.aux CV.out CV.log")
 
-def change(json_filepath, template_path, output_path):
+def build(json_filepath, template_path, output_path):
     build_latex(json_filepath, template_path, output_path)
     build_pdf(output_path)
 
@@ -75,6 +72,9 @@ def watch_json(json_filepath, template_path, output_path):
     observer.join()
 
 def main():
+    json_filepath = r"data.json"
+    template_path = r"template.tex"
+    output_path = r"CV.tex"
     while (inp := input("\n\n\nEnter a command: \nb: build\nq: quit\nw: watch\n\n-->:").strip().lower()) != "q":
         if inp == "b":
             print("Building... ")
@@ -87,4 +87,5 @@ def main():
             watch_json(json_filepath, template_path, output_path)
 
 
-main()
+if __name__ == "__main__":
+    main()
