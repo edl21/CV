@@ -32,6 +32,7 @@ jobs:
         run: |
           mkdir -p publish
           mv CV.pdf publish/
+          mv index.html publish/
 
       - name: Deploy PDF to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
