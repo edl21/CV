@@ -11,7 +11,7 @@
             "company": "Fonterra",
             "date": "Dec 2023 - Present",
             "points": [
-                "Developed an internal AI MultiAgent chatbot capable of combining custom agents for insightful responses for 3500+ monthly users, to replace external AI tools and reduce costs in a fast passed agile team",
+                "Developed an internal AI MultiAgent chatbot capable of combining custom agents for insightful responses for 3500+ monthly users, to replace external AI tools and reduce costs in a fast-paced agile team",
                 "Transitioned an application from custom Langchain stack to Semantic Kernel, enabling more complex agent interactions and auto agent routing",
                 "Introduced real-time message streaming using Azure Web PubSub, significantly improving responsiveness and user engagement, hiding increased multi agent response times",
                 "Led development of new full-stack unit testing framework, enhancing code reliability and maintainability",
