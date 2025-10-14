@@ -45,7 +45,7 @@
         }
     ],
     "skills": {
-        "Languages": ["Python", "C++", "C#", "Java", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS", "SCSS"],
+        "Languages": ["Python", "C++", "C\\#", "Java", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS", "SCSS"],
         "Dev Technologies": ["React", "DotNet", "Adobe Experience Manager (AEM)", "Sling Models", "OSGi", "AEM Core Components", "JUnit", "Adobe Target", "Git"],
         "AI/ML": ["LangChain", "Vector Databases", "Prompt Engineering", "API Integration", "Data Processing Pipelines"],
         "Other": ["Jira", "Confluence", "Agile", "Scrum", "DevOps", "Problem Solving", "Teamwork", "Communication"]
