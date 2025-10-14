@@ -1,77 +1,58 @@
 {
-    "name": "James Dunwoodie-Rowley",
+    "name": "Edward Li",
     "contact_info": {
-        "email": "Jamiedunwoodie2002@gmail.com",
-        "portfolio": "Jaorow.com",
-        "github": "github.com/Jaorow"
+        "email": "edward.z.f.li@gmail.com"
     },
     "exp": [
         {
-            "title": "AI Developer -- Full-time",
-            "company": "Fonterra",
-            "date": "Dec 2023 - Present",
+            "title": "Developer",
+            "company": "Datacom",
+            "date": "Apr 2024 - Present",
             "points": [
-                "Developed an internal AI MultiAgent chatbot capable of combining custom agents for insightful responses for 3500+ monthly users, to replace external AI tools and reduce costs in a fast-paced agile team",
-                "Transitioned an application from custom Langchain stack to Semantic Kernel, enabling more complex agent interactions and auto agent routing",
-                "Introduced real-time message streaming using Azure Web PubSub, significantly improving responsiveness and user engagement, hiding increased multi agent response times",
-                "Led development of new full-stack unit testing framework, enhancing code reliability and maintainability",
-                "Rebuilt the front-end interface to enhance usability, readability, and accessibility, based on iterative feedback from internal testing and real user behavior",
-                "Moved server-side session storage to Cosmos DB to remove cache limits and consolidate data",
-                "Delivered regular demos to leadership during sprint reviews, increasing cross-team visibility and contributing to broader adoption of transparent development practices",
-                "Single handedly designed and implemented cutting edge natural language to SQL engine using RAG pipelines for contextual understanding of table schemas and training data",
-                "Built a front-end interface for the SQL engine supporting chat history, prompt libraries and evaluation tools",
-                "Led and mentored interns to improve the performance and accuracy of the SQL generation engine"
+                "Designed and implemented a custom AI chatbot within AEM, integrating with an external API to process user queries and dynamically display structured responses",
+                "Developed responsive and accessible UIs using HTML, SCSS, and JavaScript, while handling backend logic through Java and OSGi services",
+                "Contributed to the migration of a high-traffic enterprise site to AEM, integrating systems such as Coveo Search, Adobe Journey Optimizer, GTM, and Qualtrics",
+                "Configured Adobe Target for beta rollout and GA4/GTM tracking to monitor user engagement and interaction analytics",
+                "Delivered custom AEM components for a large-scale retail platform launch, including a dynamic interactive mall map integrated with live API data using OSGi services and configurations",
+                "Developed a configurable Google Maps locator component with customizable options and responsive UI aligned to brand design guidelines",
+                "Implemented backend logic through modular Sling Models (Java) focused on scalability, maintainability, and test coverage",
+                "Created automated test suites to improve deployment reliability and reduce regression testing effort",
+                "Participated in an AEM Forms migration project, working across both frontend (HTML, SCSS, JS) and backend (Java, Sling, OSGi) development, including validation and QA testing"
             ]
         },
         {
-            "title": "AI Developer -- Part-time",
-            "company": "Fonterra",
-            "date": "Apr 2023 - Dec 2023",
+            "title": "Intern Developer",
+            "company": "Datacom",
+            "date": "Dec 2023 - Apr 2024",
             "points": [
-                "Developed an internal tool for process safety teams, leveraging cutting-edge RAG techniques to surface insights",
-                "Worked closely with stakeholders to refine product requirements and rapidly iterate on feedback",
-                "Built custom ingestion pipelines to unify data from diverse sources into structured tables",
-                "Developed and optimised multimodal LLM-powered extraction and evaluation tools that preserved document layout and spatial structure, enabling precise, context-aware data interpretation"
-            ]
-        },
-        {
-            "title": "Data Intern",
-            "company": "Fonterra",
-            "date": "Dec 2022 - Mar 2023",
-            "points": [
-                "Automated data curation and built a python application to extract and compare tables from a data platform"
+                "Developed a Proof-of-Concept Emergency Dashboard in AEM to visualize real-time operational alerts during emergency events",
+                "Built the dashboard interface using HTML, SCSS, and JavaScript, and implemented backend logic with Java Sling Models",
+                "Supported Adobe Journey Optimizer (AJO) and Adobe Data Collection initiatives by assisting with schema design and data configuration for analytics and personalization"
             ]
         }
     ],
     "proj": [
         {
-            "title": "STL upload Portal",
-            "link": "https://www.regal.co.nz",
-            "link_name": "regal.co.nz",
-            "points": [
-                "Built and deployed a full-stack web application for uploading and managing STL files for regal casting"
-            ]
-        },
-        {
             "title": "Go Bear AI Job Search",
             "link": "https://gobear.me",
             "link_name": "gobear.me",
             "points": [
-                "Led a team of three to develop a full-stack AI job search platform, integrating advanced LLM capabilities for personalized job matching and automatic CV/Cover letter customisation"
+                "Developed a full-stack AI job search platform integrating LLM-based personalization for job recommendations and automated CV/Cover letter customization",
+                "Collaborated with a small team to design APIs, user flows, and data pipelines using React and FastAPI"
             ]
         }
     ],
     "skills": {
-        "Languages": ["Python", "C++", "C\\#", "Java", "Bash", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS"],
-        "Dev Technologies": ["FastAPI", "React", "DotNet", "Docker", "Jinja2", "Swagger", "Linux", "Git", "GitHub", "GitHub Actions","CI/CD"],
-        "AI/ML": ["Pandas", "TensorFlow", "Vector Databases", "Azure AI Foundry", "LangChain", "LlamaIndex"],
-        "Other" : ["Jira", "Confluence", "Agile", "Scrum", "Kanban", "Problem Solving", "Teamwork", "Communication"]
+        "Languages": ["Python", "C++", "C#", "Java", "SQLite", "TypeScript", "JavaScript", "MD", "HTML", "CSS", "SCSS"],
+        "Dev Technologies": ["React", "DotNet", "Adobe Experience Manager (AEM)", "Sling Models", "OSGi", "AEM Core Components", "JUnit", "Adobe Target", "Git"],
+        "AI/ML": ["LangChain", "Vector Databases", "Prompt Engineering", "API Integration", "Data Processing Pipelines"],
+        "Other": ["Jira", "Confluence", "Agile", "Scrum", "DevOps", "Problem Solving", "Teamwork", "Communication"]
     },
     "edu": [
         {
             "degree": "Bachelor of Science majoring in Computer Science",
             "institution": "University of Auckland",
-            "date": "2021 - 2024"
+            "date": "2020 - 2024"
         }
     ]
 }
